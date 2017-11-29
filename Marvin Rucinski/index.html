@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <style>
+            h1 {
+                margin-top: 70px;
+                color: #337ab7;
+                font-size: 50px;
+            }
+        
+        
+        
+        .animation {
+            margin: auto;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: #FF530D;
+            animation: square-animation 4s cubic-bezier(.32,0,.67,1) infinite alternate-reverse;
+        }
+        
+        .animate {
+            animation: animate-all 4s infinite alternate-reverse ease-in-out;
+        }
+        
+        @keyframes animate-all {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(180deg);
+            }
+        }
+        
+        
+        #one {
+            top: 100px;
+        }
+        
+        #two {
+            top: 100px;
+            right: 150px;
+        }
+        
+        #three {
+            top: 100px;
+        }
+        
+        #four {
+            bottom: 200px;
+            left: 150px;
+        }
+        
+        @keyframes square-animation {
+            0%  {
+                margin: auto;
+                border-radius: 0 0 0 0;
+                background: #FF530D;
+                transform: rotate(0deg);
+            }
+            12%  {
+                margin: auto;
+                border-radius: 25% 0 0 0;
+                background: #E82C0C;
+                transform: rotate(22deg);
+            }
+            25%  {
+                margin: auto;
+                border-radius: 25% 25% 0 0;
+                background: #FF0000;
+                transform: rotate(45deg);
+            }
+            
+            37%  {
+                margin: auto;
+                border-radius: 25% 25% 25% 0;
+                background: #E80C7A;
+                transform: rotate(67deg);
+            }
+            50% {
+                margin: auto;
+                border-radius: 25% 25% 25% 25%;
+                background: #FF0DFF;
+                transform: rotate(90deg);
+            }
+            62%  {
+                margin: auto;
+                border-radius: 50% 25% 25% 25%;
+                background: #E82C0C;
+                transform: rotate(112deg);
+            }
+            75%  {
+                margin: auto;
+                border-radius: 50% 50% 25% 25%;
+                background: #FF0000;
+                transform: rotate(135deg);
+            }
+            
+            87%  {
+                margin: auto;
+                border-radius: 50% 50% 50% 25%;
+                background: #E80C7A;
+                transform: rotate(157deg);
+            }
+            100% {
+                margin: auto;
+                border-radius: 50% 50% 50% 50%;
+                background: #FF0D
+        </style>
+        <h1>
+            <center>
+                CSS Animation by Marvin Rucinski
+            </center>
+        </h1>
+    </head>
+    <body>
+        <div class="animate">
+            <div class="animation" id="one"></div>
+            <div class="animation" id="two"></div>
+            <div class="animation" id="three"></div>
+            <div class="animation" id="four"></div>
+        </div>
+    </body>
+</html>
